@@ -24,4 +24,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)printTextButton:(id)sender {
+    
+    _textField2.text = @"hello!";
+    
+}
+
+- (IBAction)printTextButton2:(id)sender {
+    
+    _textField.text = @"hi!";
+}
+
+- (IBAction)deleteAll:(id)sender {
+    _textField.text = @"";
+    _textField2.text = @"";
+    
+}
+
+
+
 @end

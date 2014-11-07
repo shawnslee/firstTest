@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UIAlertView *tempAlerView = [[UIAlertView alloc]initWithTitle:@"TEST" message:@"HI" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//    [tempAlerView show];
+//    [tempAlerView setHidden:YES];
+    
     return YES;
 }
 

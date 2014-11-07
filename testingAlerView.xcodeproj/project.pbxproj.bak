@@ -24,8 +24,6 @@
 		F11F02DB1A097B8C0059AA9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F11F02B91A0966190059AA9D /* LaunchScreen.xib */; };
 		F11F02DC1A097B8C0059AA9D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F11F02D01A097AE70059AA9D /* Podfile */; };
 		F11F02DD1A097B8C0059AA9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11F02B71A0966190059AA9D /* Images.xcassets */; };
-		F11F02E81A0984C30059AA9D /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11F02E71A0984C30059AA9D /* calabash.framework */; };
-		F11F02EA1A0984F70059AA9D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11F02E91A0984F70059AA9D /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +54,6 @@
 		F11F02D01A097AE70059AA9D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F11F02E11A097B8C0059AA9D /* testingAlerView copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testingAlerView copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11F02E21A097B8C0059AA9D /* testingAlerView copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "testingAlerView copy-Info.plist"; path = "/Users/shawn_lee/Documents/testingAlerView/testingAlerView copy-Info.plist"; sourceTree = "<absolute>"; };
-		F11F02E71A0984C30059AA9D /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
-		F11F02E91A0984F70059AA9D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11F02EA1A0984F70059AA9D /* CFNetwork.framework in Frameworks */,
-				F11F02E81A0984C30059AA9D /* calabash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +84,6 @@
 		F11F029B1A0966180059AA9D = {
 			isa = PBXGroup;
 			children = (
-				F11F02E91A0984F70059AA9D /* CFNetwork.framework */,
-				F11F02E71A0984C30059AA9D /* calabash.framework */,
 				F11F02D01A097AE70059AA9D /* Podfile */,
 				F11F02A61A0966180059AA9D /* testingAlerView */,
 				F11F02C31A0966190059AA9D /* testingAlerViewTests */,
@@ -420,10 +412,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = testingAlerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,10 +422,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = testingAlerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,20 +466,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = "testingAlerView copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"\"$(SRCROOT)/calabash.framework/calabash\"",
-					"-lstdc++",
-				);
 				PRODUCT_NAME = "testingAlerView copy";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,20 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = "testingAlerView copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"\"$(SRCROOT)/calabash.framework/calabash\"",
-					"-lstdc++",
-				);
 				PRODUCT_NAME = "testingAlerView copy";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -539,7 +501,6 @@
 				F11F02CC1A0966190059AA9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		F11F02CD1A0966190059AA9D /* Build configuration list for PBXNativeTarget "testingAlerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -548,7 +509,6 @@
 				F11F02CF1A0966190059AA9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		F11F02DE1A097B8C0059AA9D /* Build configuration list for PBXNativeTarget "testingAlerView-cal" */ = {
 			isa = XCConfigurationList;
